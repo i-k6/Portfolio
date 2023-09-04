@@ -9,7 +9,7 @@ import { Line } from "@react-three/drei";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
-  const [Toggle, setToggle] = useState(false);
+  const [Toggle, setToggle] = useState(true);
 
   return (
     <nav
@@ -46,7 +46,7 @@ const Navbar = () => {
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
-            src={Toggle ? menu : close}
+            src={Toggle ? menu: close}
             alt="menu"
             className="w-[25px] h-[20px]
             object-contain cursor-pointer"
