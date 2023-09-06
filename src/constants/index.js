@@ -58,17 +58,22 @@ import {
       icon: creator,
     }
   ];
+  
   const technologies = [
     {
-      name: "React JS",
-      icon: reactjs,
+      name: "HTML 5",
+      icon: html,
     },
     {
-      name: "HTML",
-      icon: reactjs,
+      name: "CSS 3",
+      icon: css,
     },
     {
       name: "JavaScript",
+      icon: javascript,
+    },
+    {
+      name: "React JS",
       icon: reactjs,
     },
     {
@@ -91,7 +96,6 @@ import {
       name: "figma",
       icon: figma,
     },
-
   ];
   
   const experiences = [

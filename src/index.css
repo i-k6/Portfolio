@@ -45,7 +45,7 @@
 }
 
 .green-pink-gradient {
-  background: "#00cea8";
+  background: #00cea8;
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
@@ -62,8 +62,14 @@
     #f12711,
     #f5af19
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* Standard Property */
+background-clip: text;
+
+/* Vendor-Prefixed Versions for Compatibility */
+-webkit-background-clip: text; /* Safari, Chrome (up to version 5), iOS Safari */
+-moz-background-clip: text; /* Firefox (up to version 4) */
+
+-webkit-text-fill-color: transparent;
 }
 
 .green-text-gradient {
