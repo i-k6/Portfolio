@@ -58,16 +58,6 @@ const ProjectCard = ({
               #{tag.name}
             </p>
           ))}
-          <div className="absolute mt-3 text-center justify-between">
-          <div className="button-container">
-            <a className="nes-btn retro-button" href={source_code_link} target="_blank">
-              Repo Link
-            </a>
-            <a className="nes-btn retro-button" href="#" target="_blank">
-              Demo Link
-            </a>
-          </div>
-        </div>
         </div>
       </Tilt>
     </motion.div>

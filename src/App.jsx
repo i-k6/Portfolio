@@ -9,6 +9,7 @@ import {
   Contact,
   EarthCanvas,
   BallCanvas,
+  StarsCanvas,
   ComputersCanvas,
 } from "./components";
 
@@ -26,6 +27,7 @@ const App = () => {
         <Works />
         <div className="relative z-0">
           <Contact />
+          <StarsCanvas />
         </div>
       </div>
     </BrowserRouter>
