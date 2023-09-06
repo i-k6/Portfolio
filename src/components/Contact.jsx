@@ -66,7 +66,7 @@ const Contact = () => {
   };
 
   return (
-   <section className="mt-10">
+  
      <div
       className={`xl:mt-16  flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
@@ -132,7 +132,6 @@ const Contact = () => {
         <EarthCanvas />
       </motion.div>
     </div>
-   </section>
   );
 };
 

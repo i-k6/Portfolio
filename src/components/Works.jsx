@@ -1,7 +1,6 @@
 import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -17,14 +16,14 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div  variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 45,
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full mb-5"
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -59,9 +58,7 @@ const ProjectCard = ({
               #{tag.name}
             </p>
           ))}
-        </div>
-
-        <div className="absolute mt-3 text-center justify-between">
+          <div className="absolute mt-3 text-center justify-between">
           <div className="button-container">
             <a className="nes-btn retro-button" href={source_code_link} target="_blank">
               Repo Link
@@ -70,6 +67,7 @@ const ProjectCard = ({
               Demo Link
             </a>
           </div>
+        </div>
         </div>
       </Tilt>
     </motion.div>
