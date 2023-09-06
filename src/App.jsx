@@ -10,7 +10,6 @@ import {
   EarthCanvas,
   BallCanvas,
   StarsCanvas,
-  ComputersCanvas,
 } from "./components";
 
 const App = () => {

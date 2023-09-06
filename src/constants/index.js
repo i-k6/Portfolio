@@ -1,6 +1,6 @@
 import {
-    mobile,
-    backend,
+    video,
+    Photoshop,
     creator,
     web,
     javascript,
@@ -15,15 +15,12 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
+    amazon,
+    ttt_game,
     threejs,
   } from "../assets";
+
+  import { sds, ibm} from '../assets';
   
   export const navLinks = [
     {
@@ -33,6 +30,10 @@ import {
     {
       id: "work",
       title: "Work",
+    },
+    {
+      id: "Achievements",
+      title: "Achievements",
     },
     {
       id: "contact",
@@ -47,11 +48,11 @@ import {
     },
     {
       title: "Video Editor",
-      icon: creator,
+      icon: video,
     },
     {
       title: "Graphic Designer",
-      icon: creator,
+      icon: Photoshop,
     },
     {
       title: "Web3",
@@ -96,15 +97,16 @@ import {
       name: "figma",
       icon: figma,
     },
+
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Front-end Developer Intern",
+      company_name: "IBM",
+      icon: ibm,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "June 2023 - July 2023",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -113,39 +115,13 @@ import {
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "WordPress Developer Intern",
+      company_name: "Sumeru Digital Solutions",
+      icon: sds,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Jan 2023 - Feb 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and maintaining web applications using WordPress and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
@@ -153,96 +129,47 @@ import {
     },
   ];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Amazon Clone",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "An Amazon clone is a web application that replicates the core functionalities of Amazon.com, such as product browsing, searching, adding to cart, and checkout. It is typically developed using React and Firebase technologies. Amazon clones can be used by businesses of all sizes to create their own online marketplace.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Redux Toolkit",
           color: "green-text-gradient",
         },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: amazon,
+      source_code_link: "https://github.com/i-k6/amazon-clone",
+      live_link: "https://karnn.netlify.app/",
     },
     {
-      name: "Job IT",
+      name: "Tic-Tac-Toa Game",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Tic-tac-toe, also known as noughts and crosses or Xs and Os, is a paper-and-pencil game for two players who take turns marking the spaces in a three-by-three grid with X or O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.",
       tags: [
         {
-          name: "react",
+          name: "Html",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "Css",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "Javascript",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: ttt_game,
+      source_code_link: "https://github.com/i-k6/tictactoe",
+      live_link: "https://i-k6.github.io/tictactoe/",
     },
   ];
 
@@ -250,6 +177,5 @@ import {
     services, 
     technologies,
     experiences,
-    testimonials,
     projects
   };

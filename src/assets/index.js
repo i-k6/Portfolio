@@ -1,9 +1,10 @@
 import logo from "./logo.jpg";
-import backend from "./backend.png";
+import Photoshop from "./Photoshop.png";
 import creator from "./creator.png";
-import mobile from "./mobile.png";
+import video from "./video.png";
 import web from "./web.png";
 import github from "./github.png";
+import link from "./Link.jpg";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -21,22 +22,20 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import ibm from "./company/IBM.jpg";
+import sds from "./company/sds.jpeg";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import amazon from "./amazon_project.png";
+import ttt_game from "./ttt_game.png";
 
 export {
   logo,
-  backend,
+  Photoshop,
   creator,
-  mobile,
+  video,
   web,
   github,
+  link,
   menu,
   close,
   css,
@@ -52,11 +51,8 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  ibm,
+  sds,
+  amazon,
+  ttt_game
 };
