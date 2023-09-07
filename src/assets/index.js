@@ -28,6 +28,15 @@ import sds from "./company/sds.jpeg";
 import amazon from "./amazon_project.png";
 import ttt_game from "./ttt_game.png";
 
+//Certificates//
+
+import fed_ibm from './cert/fed_ibm.jpg'
+import cyber_ibm from './cert/cyber_ibm.jpg'
+import sdsi  from './cert/sdsi.jpg'
+import nlvl from './cert/nationlvl.jpg'
+import slvl from './cert/statelvl.jpg'
+import dlvl from './cert/distlvl.jpg'
+
 export {
   logo,
   Photoshop,
@@ -54,5 +63,11 @@ export {
   ibm,
   sds,
   amazon,
-  ttt_game
+  ttt_game,
+  fed_ibm,
+  cyber_ibm,
+  sdsi,
+  nlvl,
+  slvl,
+  dlvl,
 };

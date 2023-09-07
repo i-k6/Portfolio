@@ -6,11 +6,13 @@ import {
   Tech,
   Experience,
   Works,
+  certificates,
   Contact,
   EarthCanvas,
   BallCanvas,
   StarsCanvas,
 } from "./components";
+import Certification from "./components/Certification";
 
 const App = () => {
   return (
@@ -25,6 +27,7 @@ const App = () => {
         <Tech />
         <Works />
         <div className="relative z-0">
+          <Certification />
           <Contact />
           <StarsCanvas />
         </div>

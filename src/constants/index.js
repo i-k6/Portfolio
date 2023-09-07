@@ -18,6 +18,13 @@ import {
     amazon,
     ttt_game,
     threejs,
+    fed_ibm,
+    cyber_ibm,
+    sdsi,
+    nlvl,
+    slvl,
+    dlvl,
+
   } from "../assets";
 
   import { sds, ibm} from '../assets';
@@ -173,9 +180,58 @@ import {
     },
   ];
 
+
+
+  const certificates = [
+    {
+      name: "IBM Front-End Development Internship Certificate",
+      description:
+      "I interned at IBM in front-end web development, where I gained hands-on experience in designing and building user-friendly web interfaces.",
+      c_image: fed_ibm,
+      c_link: "https://drive.google.com/file/d/1FDYdcxxfYXO706mSl0jqJPvG6Q4laKV2/view?usp=sharing",
+    },
+    {
+      name: "IBM CyberSecurity Internship Certificate",
+      description:
+      "I interned at IBM in cybersecurity, where I focused on protecting digital assets and data through various security measures and strategies.",
+      c_image: cyber_ibm,
+      c_link: "https://drive.google.com/file/d/1Sx1rSqkCt8y7C78rgRogNIPwu4wJ7Hwr/view?usp=sharing",
+    },
+    {
+      name: "WordPress Internship Certificate",
+      description:
+      "I interned at Sumeru Digital Solutions, specializing in WordPress web development. During my internship, I honed my skills in creating and customizing WordPress websites to deliver tailored and visually appealing online solutions.",
+      c_image: sdsi,
+      c_link: "https://drive.google.com/file/d/17p9EZuF8161zweT6TKnVBQZ6BJtLx6vH/view?usp=drive_link",
+    },
+    {
+      name: "National Level",
+      description:
+      "I participated in the Inspire Awards Science Exhibition held at IIT Delhi in 2015 and received a certificate in recognition of my participation and contribution to the event.",
+      c_image: nlvl,
+      c_link: "https://drive.google.com/file/d/1EmpqPi6YrMwwdAZgE0W_R8MFKpFc8r_N/view?usp=drive_link",
+    },
+    {
+      name: "State Level",
+      description:
+      "I participated and won at the state-level Inspire Awards Science Exhibition held in 2015, earning a certificate for my achievement.",
+      c_image: slvl,
+      c_link: "https://drive.google.com/file/d/1Enhs2qM87KJKaKBBSBmT_DFuwAlZ4Mbj/view?usp=drive_link",
+    },
+    {
+      name: "District Level",
+      description:
+      "I participated and won at the District-level Inspire Awards Science Exhibition held in 2015, earning a certificate for my achievement.",
+      c_image: dlvl,
+      c_link: "https://drive.google.com/file/d/1EpmoS-m5XhbfnsU-b5VKCB_wSGiAErv1/view?usp=drive_link",
+    },
+  ];
+
+
   export{
     services, 
     technologies,
     experiences,
-    projects
+    projects,
+    certificates
   };

@@ -46,9 +46,10 @@ const ProjectCard = ({
             </div>
             <div
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              onClick={() => window.open(live_link, "_blank")}
             >
               <img
-                onClick={() => window.open(live_link, "_blank")}
+                href={live_link}
                 src={link}
                 alt="Live link"
                 className="w-1/2 h-1/2 object-contain"
