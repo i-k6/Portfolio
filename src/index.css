@@ -63,7 +63,6 @@
     #f5af19
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /* Standard Property */
-background-clip: text;
 
 /* Vendor-Prefixed Versions for Compatibility */
 -webkit-background-clip: text; /* Safari, Chrome (up to version 5), iOS Safari */
