@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
@@ -7,14 +7,11 @@ import { SectionWrapper } from "../hoc";
 import { certificates } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({index, name, description, c_image, c_link }) => {
+const ProjectCard = ({ index, name, description, c_image, c_link }) => {
 
   return (
         <motion.div
         variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-          initial={{ x: "100%" }}
-          animate={{ x: 0 }}
-          exit={{ x: "-100%" }}
         >
           <Tilt
             options={{

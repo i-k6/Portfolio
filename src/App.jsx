@@ -32,10 +32,7 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
-        
-        <div className="z-5">
         <Footer />
-        </div>
       </div>
     </BrowserRouter>
   );
