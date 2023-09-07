@@ -7,11 +7,7 @@ import {
   Experience,
   Works,
   Contact,
-  EarthCanvas,
-  certificates,
-  BallCanvas,
   StarsCanvas,
-  Footer
 } from "./components";
 import Certification from "./components/Certification";
 
@@ -34,7 +30,6 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
-        <Footer />
       </div>
     </BrowserRouter>
   );
