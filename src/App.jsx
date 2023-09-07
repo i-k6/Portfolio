@@ -8,6 +8,7 @@ import {
   Works,
   Contact,
   EarthCanvas,
+  certificates,
   BallCanvas,
   StarsCanvas,
   Footer
@@ -26,7 +27,9 @@ const App = () => {
         <Experience />
         <Tech />
         <Works />
-        <Certification />
+        <div>
+          <Certification />
+        </div>
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
