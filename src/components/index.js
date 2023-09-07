@@ -7,11 +7,13 @@ import Experience from "./Experience";
 import Works from "./Works";
 import Contact from "./Contact";
 import certificates from "./Certification";
+import Footer from "./Footer";
 
 
 export {
   Hero,
   Navbar,
+  Footer,
   About,
   Tech,
   Experience,

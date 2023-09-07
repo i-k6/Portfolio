@@ -11,6 +11,7 @@ import {
   EarthCanvas,
   BallCanvas,
   StarsCanvas,
+  Footer
 } from "./components";
 import Certification from "./components/Certification";
 
@@ -30,6 +31,7 @@ const App = () => {
           <Certification />
           <Contact />
           <StarsCanvas />
+          <Footer />
         </div>
       </div>
     </BrowserRouter>
