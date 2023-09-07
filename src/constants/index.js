@@ -115,7 +115,7 @@ import {
       ],
     },
     {
-      title: "WordPress Developer Intern",
+      title: "WordPress Intern",
       company_name: "Sumeru Digital Solutions",
       icon: sds,
       iconBg: "#E6DEDD",
@@ -150,7 +150,7 @@ import {
       live_link: "https://karnn.netlify.app/",
     },
     {
-      name: "Tic-Tac-Toa Game",
+      name: "Tic-Tac-Toe Game",
       description:
       "Tic-tac-toe, also known as noughts and crosses or Xs and Os, is a paper-and-pencil game for two players who take turns marking the spaces in a three-by-three grid with X or O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.",
       tags: [
