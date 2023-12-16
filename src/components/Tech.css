@@ -1,0 +1,32 @@
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.skill-card {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  perspective: 1000px;
+  transition: transform 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.skill {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: linear-gradient(to bottom right, rgb(3, 1, 32), rgb(232, 234, 243));
+  transform-style: preserve-3d;
+  transition: transform 0.3s;
+  text-align: center;
+}

@@ -1,27 +1,41 @@
-import { BallCanvas } from './canvas';
+import React from 'react';
 import { SectionWrapper } from '../hoc';
-import { technologies } from '../constants';
-import { motion } from 'framer-motion';
-import { textVariant } from '../utils/motion';
-import { styles } from '../styles';
+import './Tech.css';
 
 const Tech = () => {
   return (
     <>
-     <div className='flex flex-row justify-center  mb-10 flex-wrap '>
-     <motion.div variants={textVariant()}>
-        <h4 className={styles.heroSubText}>Tech I Know</h4>
-      </motion.div>
-     </div>
-    <div className='flex flex-row justify-center gap-20 flex-wrap'>
-      {technologies.map((technology) => (
-        <div className="w-28 h-28" key={technology.name}>
-          <BallCanvas icon={technology.icon} />
-        </div>
-      ))}
-    </div>
-    </>
-  )
-}
+      <div className='flex flex-col items-center mb-10'>
+        <h2 className='text-2xl font-bold mb-4'>Skills</h2>
 
-export default SectionWrapper(Tech, "");
+        <div className='skills-container'>
+          <div className='skill-card'>
+            <div className='skill'>React</div>
+          </div>
+          <div className='skill-card'>
+            <div className='skill'>JavaScript</div>
+          </div>
+          <div className='skill-card'>
+            <div className='skill'>C</div>
+          </div>
+          <div className='skill-card'>
+            <div className='skill'>SQL</div>
+          </div>
+          <div className='skill-card'>
+            <div className='skill'>HTML</div>
+          </div>
+          <div className='skill-card'>
+            <div className='skill'>CSS</div>
+          </div>
+          <div className='skill-card'>
+            <div className='skill'>
+              Tailwind<br />CSS
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};  
+
+export default SectionWrapper(Tech, '');
