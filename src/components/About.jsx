@@ -56,13 +56,13 @@ const About = () => {
         into digital realities.
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-10 justify-center mx-auto">
         {services.map((service, index) => (
-          <ServiceCard key={service.title} index = {index} {...service} />
+          <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
     </>
   );
 };
 
-export default SectionWrapper(About, "about")
+export default SectionWrapper(About, "about");

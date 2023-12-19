@@ -8,34 +8,14 @@ import link from "./Link.jpg";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
-
+//experience 
 import ibm from "./company/IBM.jpg";
 import sds from "./company/sds.jpeg";
 
+//projects
 import amazon from "./amazon_project.png";
 import ttt_game from "./ttt_game.png";
 
-//Certificates//
-
-import fed_ibm from './cert/fed_ibm.jpg'
-import cyber_ibm from './cert/cyber_ibm.jpg'
-import sdsi  from './cert/sdsi.jpg'
-import nlvl from './cert/nationlvl.jpg'
-import slvl from './cert/statelvl.jpg'
-import dlvl from './cert/distlvl.jpg'
 
 export {
   logo,
@@ -47,27 +27,8 @@ export {
   link,
   menu,
   close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
   ibm,
   sds,
   amazon,
   ttt_game,
-  fed_ibm,
-  cyber_ibm,
-  sdsi,
-  nlvl,
-  slvl,
-  dlvl,
 };

@@ -7,8 +7,8 @@ import {
   Experience,
   Works,
   Contact,
+  Footer,
 } from "./components";
-import Certification from "./components/Certification";
 
 const App = () => {
   return (
@@ -23,9 +23,9 @@ const App = () => {
         <Tech />
         <Works />
         <div className="relative z-0">
-          <Certification />
           <Contact />
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );

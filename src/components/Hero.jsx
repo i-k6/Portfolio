@@ -1,6 +1,26 @@
+import React, { useEffect } from "react";
 import { styles } from "../styles";
+import Typed from "typed.js";
 
 const Hero = () => {
+  const typedRef = React.useRef(null);
+
+  React.useEffect(() => {
+    const options = {
+      strings: ["Hi, I'm <span class='text-[#915eff]'>Karan</span>"],
+      typeSpeed: 100, 
+      showCursor: false, 
+      contentType: 'html',
+    };
+    typedRef.current = new Typed("#typed-text", options);
+
+    return () => {
+      if (typedRef.current) {
+        typedRef.current.destroy();
+      }
+    };
+  }, []);
+
   return (
     <section className="relative w-full h-screen mx-auto flex flex-row items-center">
       <div
@@ -12,17 +32,20 @@ const Hero = () => {
         </div>
 
         <div className="mt-5">
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915eff]">Karan</span>
-          </h1>
+          <h1
+            id="typed-text"
+            className={`${styles.heroHeadText} text-white`}
+          ></h1>
           <p className={`${styles.heroSubText} mt-3 text-white-100`}>
-            I'm a dedicated web developer <br className="sm:block hidden" />{" "}
-            with a passion for crafting interactive and user-friendly websites.
+            I'm a dedicated web developer
+            <br className="sm:block hidden" /> with a passion for crafting
+            interactive and user-friendly websites.
           </p>
         </div>
       </div>
     </section>
   );
 };
+
 
 export default Hero;

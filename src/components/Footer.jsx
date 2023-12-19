@@ -3,10 +3,10 @@ import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="footer-bottom">
-      <div className="social-icons gap-[5px]">
+    <div className="footer-bottom text-center flex flex-col items-center">
+      <div className="social-icons flex gap-5 mb-2">
         <a
-          className="social-icon text-white"
+          className="social-icon text-white text-2xl" // Adjust the icon size as needed
           href="https://github.com/i-k6"
           target="_blank"
           rel="noreferrer"
@@ -14,7 +14,7 @@ const Footer = () => {
           <BsGithub />
         </a>
         <a
-          className="social-icon text-white"
+          className="social-icon text-white text-2xl" // Adjust the icon size as needed
           href="https://www.linkedin.com/in/karan-kumar-487a8a260/"
           target="_blank"
           rel="noreferrer"
@@ -22,8 +22,8 @@ const Footer = () => {
           <BsLinkedin />
         </a>
         <a
-          className="social-icon text-white"
-          href="https://twitter.com/karn_kumr_"
+          className="social-icon text-white text-2xl" // Adjust the icon size as needed
+          href="https://twitter.com/iKK6600"
           target="_blank"
           rel="noreferrer"
         >
@@ -31,7 +31,7 @@ const Footer = () => {
         </a>
       </div>
       <div>
-        <p className="footer-text">
+        <p className="footer-text text-white">
           &copy; {new Date().getFullYear()} Made with ❤️ By Karan
         </p>
       </div>
