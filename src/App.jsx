@@ -7,7 +7,6 @@ import {
   Experience,
   Works,
   Contact,
-  StarsCanvas,
 } from "./components";
 import Certification from "./components/Certification";
 
@@ -26,7 +25,6 @@ const App = () => {
         <div className="relative z-0">
           <Certification />
           <Contact />
-          <StarsCanvas />
         </div>
       </div>
     </BrowserRouter>
