@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { styles } from "../styles";
 import Typed from "typed.js";
-import Resume from "../assets/Resume_Cv/Resume.pdf.pdf"
+import Resume from "../assets/Resume_Cv/MyResume.pdf"
 const Hero = () => {
   const typedRef = React.useRef(null);
   const [clicked, setClicked] = useState(false);
