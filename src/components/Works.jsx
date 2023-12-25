@@ -1,30 +1,52 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Tilt } from "react-tilt";
-import { motion } from "framer-motion";
-import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
-import './Works.css'
+import "./Works.css";
 
 const ProjectCard = ({
-  index,
   name,
   description,
   tags,
   image,
   source_code_link,
-  live_link
+  live_link,
 }) => {
+  const [githubLinkText, setGithubLinkText] = useState("");
+  const [liveLinkText, setLiveLinkText] = useState("");
+
+  useEffect(() => {
+    const githubTextToDisplay = " GitHub";
+    const liveTextToDisplay = " Live";
+
+    let githubIndex = 0;
+    let liveIndex = 0;
+
+    const githubIntervalId = setInterval(() => {
+      setGithubLinkText((prev) =>
+        githubTextToDisplay.substring(0, githubIndex++)
+      );
+    }, 50);
+
+    const liveIntervalId = setInterval(() => {
+      setLiveLinkText((prev) => liveTextToDisplay.substring(0, liveIndex++));
+    }, 60);
+
+    return () => {
+      clearInterval(githubIntervalId);
+      clearInterval(liveIntervalId);
+    };
+  }, []);
+
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <div className="mb-5">
       <Tilt
         options={{
-          max: 45,
+          max: 15,
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full mb-5"
+        className="bg-gradient-to-b from-black to-gray-900 p-5 rounded-2xl sm:w-[360px] w-full border border-white" // Added border property
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -34,8 +56,8 @@ const ProjectCard = ({
           />
         </div>
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <h3 className="text-white font-bold text-3xl sm:text-4xl">{name}</h3>
+          <p className="mt-2 text-secondary text-[16px]">{description}</p>
         </div>
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
@@ -52,47 +74,57 @@ const ProjectCard = ({
             href={source_code_link}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-secondary text-white  button px-4 py-2 rounded-md transition duration-300 hover:bg-secondary-dark"
+            className="bg-black text-white button px-4 py-2 rounded-md border border-white transition duration-300 hover:bg-white hover:text-black"
           >
-            GitHub
+            {githubLinkText}
           </a>
           <a
             href={live_link}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-primary text-white  button px-4 py-2 rounded-md transition duration-300 hover:bg-primary-dark"
+            className="bg-black text-white button px-4 py-2 rounded-md border border-white transition duration-300 hover:bg-white hover:text-black"
           >
-            Live
+            {liveLinkText}
           </a>
         </div>
       </Tilt>
-    </motion.div>
+    </div>
   );
 };
 
 const Works = () => {
+  const [typewriterVisible, setTypewriterVisible] = useState(false);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setTypewriterVisible(true);
+    }, 100);
+    return () => clearTimeout(timeoutId);
+  }, []);
+
+  const typewriterText = "Projects";
+  const [displayText, setDisplayText] = useState("");
+
+  useEffect(() => {
+    let index = 0;
+    const intervalId = setInterval(() => {
+      setDisplayText((prev) => typewriterText.substring(0, index++));
+      if (index > typewriterText.length) {
+        clearInterval(intervalId);
+      }
+    }, 120);
+    return () => clearInterval(intervalId);
+  }, [typewriterText]);
+
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <h2 className={styles.sectionHeadText}>Projects</h2>
-      </motion.div>
-
-      <div className="w-full flex">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
-          My portfolio includes a diverse range of projects that showcase my
-          skills in front-end and back-end development. Each project is
-          described briefly with links to its Github Repo and Live Demo. These
-          projects not only highlight my proficiency in HTML, CSS, JavaScript,
-          React, and various web development frameworks but also demonstrate my
-          ability to deliver tailored solutions that meet clients' specific
-          needs.
-        </motion.p>
+      <div className="text-center font-bold text-white md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] mb-10">
+        {typewriterVisible && (
+          <span className="text-3xl sm:text-4xl">{displayText}</span>
+        )}
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-10 flex flex-wrap gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} {...project} index={index} />
         ))}

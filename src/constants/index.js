@@ -1,8 +1,4 @@
 import {
-    video,
-    Photoshop,
-    creator,
-    web,
     amazon,
     ttt_game,
   } from "../assets";
@@ -22,25 +18,6 @@ import {
       id: "contact",
       title: "Contact",
     },
-  ];
-  
-  const services = [
-    {
-      title: "Web Developer",
-      icon: web,
-    },
-    {
-      title: "Video Editor",
-      icon: video,
-    },
-    {
-      title: "Graphic Designer",
-      icon: Photoshop,
-    },
-    {
-      title: "Web3",
-      icon: creator,
-    }
   ];
   
   
@@ -119,7 +96,6 @@ import {
 
 
   export{
-    services, 
     experiences,
     projects,
   };
