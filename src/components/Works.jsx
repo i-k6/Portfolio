@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Tilt } from "react-tilt";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import "./Works.css";
+
 
 const ProjectCard = ({
   name,
@@ -69,24 +69,24 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-        <div className=" mt-4 flex gap-4">
-          <a
-            href={source_code_link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-black text-white button px-4 py-2 rounded-md border border-white transition duration-300 hover:bg-white hover:text-black"
-          >
-            {githubLinkText}
-          </a>
-          <a
-            href={live_link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-black text-white button px-4 py-2 rounded-md border border-white transition duration-300 hover:bg-white hover:text-black"
-          >
-            {liveLinkText}
-          </a>
-        </div>
+        <div className="mt-4 flex justify-center gap-4 transition duration-300 hover:opacity-75">
+  <a
+    href={source_code_link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-black text-white button px-4 py-2 rounded-md border border-white transition duration-300 hover:bg-white hover:text-black"
+  >
+    {githubLinkText}
+  </a>
+  <a
+    href={live_link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-black text-white button px-4 py-2 rounded-md border border-white transition duration-300 hover:bg-white hover:text-black"
+  >
+    {liveLinkText}
+  </a>
+</div>
       </Tilt>
     </div>
   );

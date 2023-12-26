@@ -23,7 +23,7 @@ const Hero = () => {
 
   useEffect(() => {
     const options = {
-      strings: ["Hi, I'm <span class='black text-shadow'>Karan</span>"],
+      strings: ["Hi, I'm <span class='text-black'>Karan</span>"],
       typeSpeed: 70,
       showCursor: false,
       contentType: "html",
